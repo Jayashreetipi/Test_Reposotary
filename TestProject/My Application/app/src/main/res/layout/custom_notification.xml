@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_lyt">
+        <ImageView android:id="@+id/image_app"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/ic_heart_red_launcher"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+        <TextView android:id="@+id/nottitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:layout_marginRight="45dp"
+            android:textSize="18dp"
+            android:textColor="@android:color/black"
+            style="Custom Notification Title" />
+        <TextView android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="45dp"
+            android:text="Text"
+            android:textSize="16dp"
+            android:layout_below="@id/nottitle"
+            style="Custom Notification Text" />
+
+    </RelativeLayout>
+    <ImageView android:id="@+id/image_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_lyt"
+        android:layout_marginLeft="20dp"
+        />
+</RelativeLayout>
